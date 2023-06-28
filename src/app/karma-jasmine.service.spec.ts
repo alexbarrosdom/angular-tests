@@ -73,6 +73,35 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(-2);
   });
 
+  it('debería saber determinar si un número positivo es par', () => {
+    const resultado = service.parImpar(2);
+    expect (resultado).toBe(true);
+  });
+
+  it('debería saber determinar si un número negativo es par', () => {
+    const resultado = service.parImpar(-1);
+    expect (resultado).toBe(false);
+  });
+
+  it('debería saber determinar si una palabra es un palíndromo', () => {
+    const resultado = service.esPalindromo("radar");
+    expect(resultado).toBe(true);
+  });
+
+  it('debería saber determinar si una palabra no es un palíndromo', () => {
+    const resultado = service.esPalindromo("buque");
+    expect(resultado).toBe(false);
+  });
+
+  it('debería calcular el factorial de un número correctamente', () => {
+    const resultado = service.factorial(3);
+    expect(resultado).toBe(6);
+  })
+
+
+
+  
+
 
 
 

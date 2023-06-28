@@ -23,5 +23,29 @@ export class KarmaJasmineService {
     return a / b;
   }
 
+  parImpar(a:number): boolean{
+    if(a % 2 == 0){
+        return(true);
+    }else{
+        return(false);
+    }
+  }
+
+ esPalindromo(texto: string): boolean{
+  let textoReverso = texto.split("").reverse().join("");
+   if(texto == textoReverso){
+    return true;
+   }else{
+    return false;
+   }
+  }
+
+   factorial(a: number) : number {
+    if (a == 0) { 
+      return 1}
+    else{
+       return a * this.factorial(a - 1)
+    }    
+}
 
 }

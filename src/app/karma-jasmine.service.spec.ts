@@ -96,7 +96,38 @@ describe('KarmaJasmineService', () => {
   it('debería calcular el factorial de un número correctamente', () => {
     const resultado = service.factorial(3);
     expect(resultado).toBe(6);
-  })
+  });
+
+  it('debería determinar qué número es mayor', () => {
+    const resultado = service.maximo(9,108);
+    expect(resultado).toBe(108);
+  });
+
+  it('debería determinar que un número positivo es mayor que uno negativo', () => {
+    const resultado = service.maximo(-3,2);
+    expect(resultado).toBe(2);
+  });
+
+  it('debería transformar una palabra a mayúsculas', () => {
+    const resultado = service.mayus("rana");
+    expect(resultado).toBe("RANA");
+  });
+
+  it('debería determinar si un número es primo', () => {
+    const resultado = service.esPrimo(7);
+    expect(resultado).toBe(true);
+  });
+
+  it('debería determinar si un número no es primo', () => {
+    const resultado = service.esPrimo(10);
+    expect(resultado).toBe(false);
+  });
+
+ 
+
+
+
+
 
 
 

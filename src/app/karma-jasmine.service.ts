@@ -45,7 +45,32 @@ export class KarmaJasmineService {
       return 1}
     else{
        return a * this.factorial(a - 1)
-    }    
+    } 
+  }
+  
+  maximo(a: number, b: number): number {
+    if (a > b){
+      return a;
+    }else if (a == b){
+      return null;
+    }
+    else{
+      return b;
+    }
+  }
+
+  mayus(palabra: string): string  {
+    return (palabra.toUpperCase());
+  }
+
+  esPrimo(a: number): boolean{
+    for(let i=2; i<a; i++){
+        if (a % i == 0) {
+            return false;
+        }
+    }
+    return a >1;
 }
+
 
 }

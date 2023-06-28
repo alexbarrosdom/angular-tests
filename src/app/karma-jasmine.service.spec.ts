@@ -148,6 +148,23 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(false);
   });
 
+  it('debería calcular la media correctamente',() => {
+    const resultado = service.mediaNumeros([1,2,3,4,5]);
+    expect(resultado).toBe(3);
+  });
+
+  it('debería convertir una cadena a un array correctamente',() => {
+    const resultado = service.convertirAArray('cuervo');
+    expect(resultado).toEqual(['c','u','e','r','v','o']);
+  });
+
+  it('debería sumar los dígitos de un número correctamente',() => {
+    const resultado = service.sumaDigitos(108);
+    expect(resultado).toBe(9);
+  });
+
+  
+
 
 
  

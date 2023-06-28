@@ -94,7 +94,35 @@ subString(cadena:string[], subcadena:string): boolean {
   }
 }
 
+ mediaNumeros(numeros: number[]): number{
+  let media: number = 0;
+  for (let numero of numeros){
+   media += numero/numeros.length;
+  }
+  return media;
+}
+
+convertirAArray(cadenaa: string): string[]{
+  let cadenaarray = cadenaa.split('');
+  return cadenaarray;
+}
+
+sumaDigitos(num: number): number{
+  let suma: number = 0;
+  let digitos: string[] = num.toString().split('');
+  for(let i = 0; i < digitos.length; i++){
+    suma += parseInt(digitos[i]);
+  }
+  return suma;
+}
+
+//Función para verificar si una cadena es un anagrama de otra(mismas letras pero distintas posiciones)
+//Función para calcular el área de un polígono regular(apotema, longitud_lado, numero_lados)
+//Función para encontrar la moda (valor más frecuente) en un array de números
 
 }
+
+
+
 
 

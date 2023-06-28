@@ -108,9 +108,14 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(2);
   });
 
-  it('debería transformar una palabra a mayúsculas', () => {
-    const resultado = service.mayus("rana");
-    expect(resultado).toBe("RANA");
+  it('debería transformar una palabra en minúsculas a mayúsculas', () => {
+    const resultado = service.mayus("dinosaurio");
+    expect(resultado).toBe("DINOSAURIO");
+  });
+
+  it('debería transformar una palabra con letras minúsculas y mayúsculas totalmente a mayúsculas', () => {
+    const resultado = service.mayus("DiNoSaUrIo");
+    expect(resultado).toBe("DINOSAURIO");
   });
 
   it('debería determinar si un número es primo', () => {

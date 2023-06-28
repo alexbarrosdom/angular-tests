@@ -128,6 +128,28 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(false);
   });
 
+  it('debería decir que un número positivo lo es', () => {
+    const resultado = service.esPositivo(22);
+    expect(resultado).toBe(true);
+  });
+
+  it('debería decir el número de elementos de un array', () => {
+    const resultado = service.numeroElementos(['ola','que','tal']);
+    expect(resultado).toBe(3);
+  });
+
+  it('debería decir que una subcadena está en el array', () => {
+    const resultado = service.subString(['a','miña','casa'], 'casa');
+    expect(resultado).toBe(true);
+  });
+
+  it('debería decir que una subcadena no está en el array', () => {
+    const resultado = service.subString(['a','miña','casa'], 'lagarto');
+    expect(resultado).toBe(false);
+  });
+
+
+
  
 
 

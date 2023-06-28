@@ -72,5 +72,29 @@ export class KarmaJasmineService {
     return a >1;
 }
 
+esPositivo(a:number): boolean {
+  if(a > 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+numeroElementos(array: string[]): number {
+return array.length;
+}
+
+subString(cadena:string[], subcadena:string): boolean {
+  if(cadena.includes (subcadena)){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 
 }
+
+

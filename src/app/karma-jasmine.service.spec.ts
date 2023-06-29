@@ -163,6 +163,21 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(9);
   });
 
+  it('debería verificar si una cadena es anagrama de otra',() =>{
+    const resultado = service.esAnagrama('Cara','arca');
+    expect(resultado).toBe(true);
+  });
+
+  it('debería determinar que una cadena no es anagrama de otra',() =>{
+    const resultado = service.esAnagrama('lagarto','murciélago');
+    expect(resultado).toBe(true);
+  });
+
+  it('debería calcular correctamente el área de un polígono regular',() =>{
+    const resultado = service.areaPoligonoReg(5,6,6);
+    expect(resultado).toBe(90);
+  });
+
   
 
 

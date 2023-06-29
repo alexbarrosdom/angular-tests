@@ -117,8 +117,29 @@ sumaDigitos(num: number): number{
 }
 
 //Función para verificar si una cadena es un anagrama de otra(mismas letras pero distintas posiciones)
+
+esAnagrama(palabra1:string, palabra2:string): boolean {
+let palabra1m = palabra1.toLowerCase;
+let palabra2m = palabra2.toLowerCase;
+let palabra1split = palabra1m.toString().split("");
+let palabra2split = palabra2m.toString().split("");
+let palabrafinal = palabra1split.sort().join("");
+let palabraanagrama = palabra2split.sort().join("");
+if(palabrafinal == palabraanagrama){
+  return true;
+}else{
+  return false;
+}
+
+}
 //Función para calcular el área de un polígono regular(apotema, longitud_lado, numero_lados)
+
+areaPoligonoReg(apotema:number, longitud_lado:number, numero_lados: number): number{
+  let area = (numero_lados * longitud_lado * apotema)/2;
+  return area;
+}
 //Función para encontrar la moda (valor más frecuente) en un array de números
+
 
 }
 
